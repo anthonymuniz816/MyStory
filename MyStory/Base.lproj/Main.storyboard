@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajl-Ef-No4" userLabel="PicView">
+                                <rect key="frame" x="92" y="174" width="209" height="266"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="coS-Bi-jDI">
+                                        <rect key="frame" x="8" y="-7" width="178.33333333333334" height="265"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superman" translatesAutoresizingMaskIntoConstraints="NO" id="W9d-yX-Cgu">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.33333333333334" height="265"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="coS-Bi-jDI" secondAttribute="trailing" constant="22.666666666666629" id="1C8-1K-JOp"/>
+                                    <constraint firstItem="coS-Bi-jDI" firstAttribute="leading" secondItem="ajl-Ef-No4" secondAttribute="leadingMargin" id="6eG-6f-NNt"/>
+                                    <constraint firstItem="coS-Bi-jDI" firstAttribute="bottom" secondItem="ajl-Ef-No4" secondAttribute="bottomMargin" id="7sn-Rr-Hfh"/>
+                                    <constraint firstItem="coS-Bi-jDI" firstAttribute="top" secondItem="ajl-Ef-No4" secondAttribute="top" constant="-7" id="gCW-Vr-Geb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agu-Su-DOz">
+                                <rect key="frame" x="149" y="490" width="106.66666666666669" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back Story"/>
+                                <connections>
+                                    <action selector="BackstoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xCC-Qd-16e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhd-1S-R27">
+                                <rect key="frame" x="158" y="448" width="89.666666666666657" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="XeD-gW-Dfj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Location"/>
+                                <connections>
+                                    <action selector="LocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XwZ-it-N4c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super-Man" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kng-pq-8sC">
+                                <rect key="frame" x="154" y="115" width="85" height="20.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.333333333333343" id="ybZ-Aa-uBm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7x-s3-6rh">
+                                <rect key="frame" x="158" y="532" width="89.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fun Fact"/>
+                                <connections>
+                                    <action selector="FunFactButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbE-yW-MlU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ajl-Ef-No4" firstAttribute="top" secondItem="Kng-pq-8sC" secondAttribute="bottom" constant="38.666666666666657" id="1DT-zP-opD"/>
+                            <constraint firstItem="Yhd-1S-R27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2N7-eh-Adg"/>
+                            <constraint firstItem="Agu-Su-DOz" firstAttribute="centerX" secondItem="ajl-Ef-No4" secondAttribute="centerX" id="2jN-et-oCg"/>
+                            <constraint firstItem="Yhd-1S-R27" firstAttribute="top" secondItem="ajl-Ef-No4" secondAttribute="bottom" constant="32" id="5iE-MH-JSS"/>
+                            <constraint firstItem="H7x-s3-6rh" firstAttribute="top" secondItem="Yhd-1S-R27" secondAttribute="bottom" constant="8" symbolic="YES" id="67l-LP-vEn"/>
+                            <constraint firstItem="Agu-Su-DOz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="988-qw-zD4"/>
+                            <constraint firstItem="Yhd-1S-R27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151.66666666666663" id="9xg-ak-v8x"/>
+                            <constraint firstItem="Yhd-1S-R27" firstAttribute="centerX" secondItem="Kng-pq-8sC" secondAttribute="centerX" id="OS0-qy-abf"/>
+                            <constraint firstItem="Yhd-1S-R27" firstAttribute="centerX" secondItem="Agu-Su-DOz" secondAttribute="centerX" id="PJb-d1-yvx"/>
+                            <constraint firstItem="H7x-s3-6rh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="QAJ-Hf-Uno"/>
+                            <constraint firstItem="ajl-Ef-No4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="Vxk-JL-a6v"/>
+                            <constraint firstAttribute="bottom" secondItem="Yhd-1S-R27" secondAttribute="bottom" constant="345" id="eHF-fA-dGn"/>
+                            <constraint firstItem="Yhd-1S-R27" firstAttribute="centerX" secondItem="H7x-s3-6rh" secondAttribute="centerX" id="mji-fq-x36"/>
+                            <constraint firstItem="Kng-pq-8sC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="sKf-TG-XTa"/>
+                            <constraint firstItem="Agu-Su-DOz" firstAttribute="top" secondItem="H7x-s3-6rh" secondAttribute="bottom" constant="8" symbolic="YES" id="vEy-B1-ID9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qOi-H8-H0W"/>
+                    <connections>
+                        <outlet property="SuperManPic" destination="W9d-yX-Cgu" id="Een-26-ZZd"/>
+                        <segue destination="qfG-F6-woq" kind="presentation" identifier="MainToLoc" modalPresentationStyle="fullScreen" id="bC7-w4-LHq"/>
+                        <segue destination="tL7-Nu-6uu" kind="presentation" identifier="MainToBack" modalPresentationStyle="fullScreen" id="AOQ-Ba-lVO"/>
+                        <segue destination="5Wj-bl-aTM" kind="presentation" identifier="MainToFun" modalPresentationStyle="fullScreen" id="vSj-Fa-fb9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.038167938931295" y="-2.1126760563380285"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="CUS-sC-8Ut">
+            <objects>
+                <viewController id="qfG-F6-woq" customClass="LocationViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hE4-oG-7dD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLH-pe-6s1">
+                                <rect key="frame" x="18" y="117" width="72" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;Back"/>
+                                <connections>
+                                    <action selector="LocationButton:" destination="qfG-F6-woq" eventType="touchUpInside" id="FDz-mT-qYG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOY-bn-9v6">
+                                <rect key="frame" x="163" y="180" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="dpB-7x-hsO">
+                                <rect key="frame" x="76" y="237" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyU-gK-vKT">
+                                <rect key="frame" x="38" y="362" width="316" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Smallville is a fictional town in Kansas where Superman, also known as Clark Kent, grew up. It is a small, rural community with farms and a high school, and is often a location of hope and danger in the Superman mythos.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Ph-eE-Cms"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LocToMain" modalPresentationStyle="fullScreen" id="wDy-Lg-W7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q80-me-1gZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785.49618320610682" y="10.563380281690142"/>
+        </scene>
+        <!--Back Story View Controller-->
+        <scene sceneID="ZGa-56-Yhv">
+            <objects>
+                <viewController id="tL7-Nu-6uu" customClass="BackStoryViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RGA-tn-gEj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEA-cY-z0s">
+                                <rect key="frame" x="18" y="116" width="72" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;Back"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="tL7-Nu-6uu" eventType="touchUpInside" id="dHE-6c-ahx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BackStory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-GN-Rve">
+                                <rect key="frame" x="157" y="168" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backstory" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-R0-F9n">
+                                <rect key="frame" x="76" y="224" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSe-zC-f7J">
+                                <rect key="frame" x="37" y="360" width="318" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Superman's backstory begins on the planet Krypton, where he was born as Kal-El. His father sent him to Earth to save him from Krypton's destruction, and he was adopted by a couple in Smallville, Kansas, who raised him to use his incredible powers for good. He became Superman and moved to Metropolis to fight crime and protect humanity.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TFM-Na-K2r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="BackToMain" modalPresentationStyle="fullScreen" id="aLw-jB-DrT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKd-wk-Cr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527.4809160305342" y="22.535211267605636"/>
+        </scene>
+        <!--Fun Fact View Controller-->
+        <scene sceneID="3yD-3u-KYY">
+            <objects>
+                <viewController id="5Wj-bl-aTM" customClass="FunFactViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vzg-Pt-tpc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1K-20-URO">
+                                <rect key="frame" x="18" y="115" width="72" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;Back"/>
+                                <connections>
+                                    <action selector="FunButton:" destination="5Wj-bl-aTM" eventType="touchUpInside" id="cc5-VP-CMN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun Fact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPf-CM-Jfi">
+                                <rect key="frame" x="163" y="168" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laser" translatesAutoresizingMaskIntoConstraints="NO" id="DJG-du-Uut">
+                                <rect key="frame" x="76" y="230" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk7-4Q-8sY">
+                                <rect key="frame" x="46" y="383" width="313" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">A fun fact about Superman is that his famous "S" symbol on his chest does not actually stand for "Superman." In the comics, it is the Kryptonian symbol for hope, which is fitting given Superman's status as a symbol of hope and inspiration to many people. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h4g-3P-afC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="FunToMain" modalPresentationStyle="fullScreen" id="RGO-8R-Ear"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9p-TM-t7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406.8702290076335" y="22.535211267605636"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aLw-jB-DrT"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="backstory" width="227" height="222"/>
+        <image name="laser" width="182" height="277"/>
+        <image name="location" width="1280" height="720"/>
+        <image name="superman" width="190" height="265"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
